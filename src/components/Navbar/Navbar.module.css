@@ -1,0 +1,19 @@
+.navbar{
+
+}
+.navbar_row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.logo{
+    padding: 25px;
+}
+
+.navbar_list{
+    display: flex;
+    flex-direction: row;
+    column-gap: 45px;
+}
