@@ -5,6 +5,12 @@
     display: flex;
     align-items: start;
     justify-content: space-between;
+
+
+}
+.main_title{
+    font-size: 46px;
+    font-weight: 700;
 }
 
 .benefits{
@@ -18,4 +24,20 @@
 
 .item {
 
+}
+
+.Путешествие_на_красную_планету {
+    font-size: 45.621px;
+    font-family: "MuseoSansCyrl";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    -moz-transform: matrix( 1.27134410390151,0,0,1.27134410390151,0,0);
+    -webkit-transform: matrix( 1.27134410390151,0,0,1.27134410390151,0,0);
+    -ms-transform: matrix( 1.27134410390151,0,0,1.27134410390151,0,0);
+    position: absolute;
+    left: 446.042px;
+    top: 214.954px;
+    z-index: 4;
 }
