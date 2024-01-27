@@ -1,6 +1,7 @@
 import { type FC } from 'react';
 
 import style from './Navbar.module.css';
+import angle from '../../assets/icons/angle.png';
 import logo from '../../assets/icons/logo.png';
 
 export const Navbar: FC = () => {
@@ -9,26 +10,39 @@ export const Navbar: FC = () => {
             <nav className={style.navbar}>
                 <div className={style.navbar_row}>
                     <a className={style.logo} href='#'>
-                        <img src={logo} />
+                        <img alt='logo' src={logo} />
+                        <img alt='logo' className={style.angle} src={angle} />
                     </a>
                     <ul className={style.navbar_list}>
                         <li className={style.navbar_list_item}>
-                            <a href='#'>Главная</a>
+                            <a className={style.item_link} href='#'>
+                                Главная
+                            </a>
                         </li>
                         <li className={style.navbar_list_item}>
-                            <a href='#'>Технология</a>
+                            <a className={style.item_link} href='#'>
+                                Технология
+                            </a>
                         </li>
                         <li className={style.navbar_list_item}>
-                            <a href='#'>График полетов</a>
+                            <a className={style.item_link} href='#'>
+                                График полетов
+                            </a>
                         </li>{' '}
                         <li className={style.navbar_list_item}>
-                            <a href='#'>Гарантии</a>
+                            <a className={style.item_link} href='#'>
+                                Гарантии
+                            </a>
                         </li>{' '}
                         <li className={style.navbar_list_item}>
-                            <a href='#'>О компании</a>
+                            <a className={style.item_link} href='#'>
+                                О компании
+                            </a>
                         </li>{' '}
                         <li className={style.navbar_list_item}>
-                            <a href='#'>Контакты</a>
+                            <a className={style.item_link} href='#'>
+                                Контакты
+                            </a>
                         </li>
                     </ul>
                 </div>

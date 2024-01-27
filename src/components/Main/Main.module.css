@@ -1,43 +1,111 @@
-.main{
-    min-height: 100vh;
-    color: white;
-    margin-top: 100px;
+.main {
+    width: 1200px;
+    margin: 50px auto auto auto;
     display: flex;
     align-items: start;
     justify-content: space-between;
-
-
+    padding: 0 20px;
+    height: 350px;
 }
-.main_title{
+@media screen and (max-width: 1280px){
+    .main{
+        max-width: 1000px;
+    }
+}
+@media screen and (max-width: 1024px){
+    .main{
+        max-width: 800px;
+    }
+}
+@media screen and (max-width: 780px){
+    .main{
+        max-width: 700px;
+        margin-top: 30px;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        height: 100%;
+    }
+}
+
+.header {
+    display: flex;
+    height: inherit;
+    flex-direction: column;
+    justify-content: space-around;
+}
+@media screen and (max-width: 780px){
+    .header{
+        height: 350px;
+    }
+}
+
+.header_text{
+    background: linear-gradient(to right, #fff, #ff440a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main_title {
     font-size: 46px;
-    font-weight: 700;
+    line-height: 1.2;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
-.benefits{
-    height: 360px;
+.title {
+    font-size: 18px;
+    line-height: 1.2;
+    padding: 10px 0;
 }
-.list{
+
+.button {
+    font-size: 14px;
+    line-height: 1.2;
+    color: var(--grey);
+    padding: 10px 30px;
+}
+.button:hover{
+    border: 1px solid var(--grey);
+}
+
+.benefits {
+    height: inherit;
+}
+@media screen and (max-width: 780px){
+    .benefits{
+        margin-top: 30px;
+        height: 350px;
+    }
+}
+
+
+.list {
+    height: inherit;
     display: flex;
     flex-direction: column;
-    column-gap: 20px;
+    column-gap: 10px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+    background: linear-gradient(to right, #fff, #a3a3a3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .item {
-
+    padding: 30px 35px;
+}
+.item:hover{
+    cursor: pointer;
 }
 
-.Путешествие_на_красную_планету {
-    font-size: 45.621px;
-    font-family: "MuseoSansCyrl";
-    color: rgb(255, 255, 255);
-    text-transform: uppercase;
+.item_text{
+    font-size: 18px;
     line-height: 1.2;
-    text-align: left;
-    -moz-transform: matrix( 1.27134410390151,0,0,1.27134410390151,0,0);
-    -webkit-transform: matrix( 1.27134410390151,0,0,1.27134410390151,0,0);
-    -ms-transform: matrix( 1.27134410390151,0,0,1.27134410390151,0,0);
-    position: absolute;
-    left: 446.042px;
-    top: 214.954px;
-    z-index: 4;
+    text-align: center;
+}
+.item_number{
+    font-size: 46px;
+    font-weight: bold;
+    text-align: center;
 }
