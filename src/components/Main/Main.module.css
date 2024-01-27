@@ -58,7 +58,9 @@
     line-height: 1.2;
     padding: 10px 0;
 }
-
+.button_item{
+    position: relative;
+}
 .button {
     font-size: 14px;
     line-height: 1.2;
@@ -67,6 +69,12 @@
 }
 .button:hover{
     border: 1px solid var(--grey);
+}
+
+.button_glare{
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 .benefits {

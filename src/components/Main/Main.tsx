@@ -1,6 +1,7 @@
 import { type FC } from 'react';
 
 import style from './Main.module.css';
+import glare from '../../assets/icons/glare.png';
 
 export const Main: FC = () => {
     return (
@@ -10,8 +11,9 @@ export const Main: FC = () => {
                     <h1 className={style.main_title}>путешествие</h1>
                     <h2 className={style.title}>на красную планету</h2>
                 </div>
-                <div>
+                <div className={style.button_item}>
                     <button className={style.button}>Начать путешествие</button>
+                    <img alt='glare' className={style.button_glare} src={glare} />
                 </div>
             </div>
             <div className={style.benefits}>
