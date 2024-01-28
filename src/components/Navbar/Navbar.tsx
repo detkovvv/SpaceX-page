@@ -11,7 +11,26 @@ export const Navbar: FC = () => {
                 <div className={style.navbar_row}>
                     <a className={style.logo} href='#'>
                         <img alt='logo' src={logo} />
-                        <img alt='angle' className={style.angle} src={angle} />
+                        <img
+                            alt='angle'
+                            className={`${style.angleLeftBottom} ${style.angle}`}
+                            src={angle}
+                        />
+                        <img
+                            alt='angle'
+                            className={`${style.angleLeftTop} ${style.angle}`}
+                            src={angle}
+                        />
+                        <img
+                            alt='angle'
+                            className={`${style.angleRightTop} ${style.angle}`}
+                            src={angle}
+                        />
+                        <img
+                            alt='angle'
+                            className={`${style.angleRightBottom} ${style.angle}`}
+                            src={angle}
+                        />
                     </a>
                     <ul className={style.navbar_list}>
                         <li className={style.navbar_list_item}>
