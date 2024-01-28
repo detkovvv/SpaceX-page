@@ -1,7 +1,8 @@
 import { type FC } from 'react';
 
 import style from './Main.module.css';
-import glare from '../../assets/icons/glare.png';
+import glareTop from '../../assets/icons/glare1.png';
+import glareBottom from '../../assets/icons/glare2.png';
 
 export const Main: FC = () => {
     return (
@@ -13,7 +14,8 @@ export const Main: FC = () => {
                 </div>
                 <div className={style.button_item}>
                     <button className={style.button}>Начать путешествие</button>
-                    <img alt='glare' className={style.button_glare} src={glare} />
+                    <img alt='glare-top' className={style.blareTop} src={glareTop} />
+                    <img alt='glare-bottom' className={style.blareBottom} src={glareBottom} />
                 </div>
             </div>
             <div className={style.benefits}>

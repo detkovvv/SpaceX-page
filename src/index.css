@@ -109,7 +109,6 @@ button {
     color: inherit;
     display: inline-block;
     box-shadow: none;
-    background: transparent none;
     cursor: pointer;
 }
 
