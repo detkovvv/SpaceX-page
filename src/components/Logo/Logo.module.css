@@ -1,0 +1,36 @@
+.logo {
+    padding: 25px 20px 40px 30px;
+    position: relative;
+}
+
+.logo:hover {
+    border-left: 1px solid var(--grey);
+    border-right: 1px solid var(--grey);
+}
+
+.angle {
+    position: absolute;
+}
+
+.angleLeftBottom {
+    bottom: 0;
+    left: 0;
+    transform: rotate(-90deg);
+}
+
+.angleLeftTop {
+    left: 0;
+    top: 0;
+}
+
+.angleRightTop {
+    right: 0;
+    top: 0;
+    transform: rotate(90deg);
+}
+
+.angleRightBottom {
+    right: 0;
+    bottom: 0;
+    transform: rotate(180deg);
+}

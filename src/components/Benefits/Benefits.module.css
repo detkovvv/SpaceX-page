@@ -1,0 +1,123 @@
+.benefits {
+    height: inherit;
+}
+
+@media screen and (max-width: 780px) {
+    .benefits {
+        margin-top: 30px;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .benefits {
+        height: 750px;
+    }
+}
+
+.list {
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+    background: linear-gradient(to right, #fff, #a3a3a3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 780px) {
+    .list {
+        background: linear-gradient(to bottom, #fff, #a3a3a3);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.item {
+    padding: 30px 35px;
+}
+
+.item1 {
+    background: linear-gradient(to bottom right, transparent, rgba(255, 255, 255, 0.031));
+}
+
+.item2 {
+    background: linear-gradient(to bottom left, rgba(255, 255, 255, 0.031), transparent);
+}
+
+.item3 {
+    background: linear-gradient(to top right, rgba(255, 255, 255, 0.031), transparent);
+}
+
+.item4 {
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.031), transparent);
+}
+
+.item1:hover {
+    background: linear-gradient(to bottom right, transparent, rgba(255, 255, 255, 0.061));
+    border: 1px solid;
+    border-image: linear-gradient(
+            to bottom right,
+            transparent,
+            transparent,
+            transparent,
+            #4c5255 80%
+        )
+        1;
+}
+
+.item2:hover {
+    background: linear-gradient(to bottom left, rgba(255, 255, 255, 0.061), transparent);
+    border: 1px solid;
+    border-image: linear-gradient(to top right, transparent, transparent, transparent, #4c5255 80%)
+        1;
+}
+
+.item3:hover {
+    background: linear-gradient(to top right, rgba(255, 255, 255, 0.061), transparent);
+    border: 1px solid;
+    border-image: linear-gradient(
+            to bottom left,
+            transparent,
+            transparent,
+            transparent,
+            #4c5255 80%
+        )
+        1;
+}
+
+.item4:hover {
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.061), transparent);
+    border: 1px solid;
+    border-image: linear-gradient(to top left, transparent, transparent, transparent, #4c5255 80%) 1;
+}
+
+@media screen and (max-width: 520px) {
+    .item {
+        background: linear-gradient(to top, transparent, rgba(255, 255, 255, 0.061));
+    }
+
+    .item:hover {
+        background: linear-gradient(to top, transparent, rgba(255, 255, 255, 0.111));
+        border: 1px solid;
+        border-image: linear-gradient(to top, transparent, transparent, transparent, #64241a 80%) 1;
+    }
+}
+
+.item:hover {
+    cursor: pointer;
+}
+
+.item_text {
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.item_number {
+    font-size: 46px;
+    font-weight: bold;
+    text-align: center;
+}
