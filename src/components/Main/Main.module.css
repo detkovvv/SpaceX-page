@@ -60,6 +60,13 @@
     -webkit-text-fill-color: transparent;
 }
 
+@media screen and (max-width: 780px) {
+    .header_text {
+        background: linear-gradient(to top, #fff, #ff440a);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
 .main_title {
     font-size: 46px;
     line-height: 1.2;
