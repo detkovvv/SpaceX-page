@@ -1,7 +1,7 @@
 import { type FC } from 'react';
 
 import style from './Logo.module.css';
-import angle from '../../assets/icons/angle.png';
+import angle from '../../../public/icons/angle.png';
 
 type LogoProps = {
     logo: string;

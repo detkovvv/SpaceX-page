@@ -1,8 +1,8 @@
 import { type FC } from 'react';
 
 import style from './Header.module.css';
-import glareTop from '../../assets/icons/glare1.png';
-import glareBottom from '../../assets/icons/glare2.png';
+import glareTop from '../../../public/icons/glare1.png';
+import glareBottom from '../../../public/icons/glare2.png';
 
 type HeaderProps = {
     header: {
