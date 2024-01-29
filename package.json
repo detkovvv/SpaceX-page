@@ -4,7 +4,7 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "homepage": "https://github.com/detkovvv/SpaceX-page/",
+  "homepage": "/SpaceX-page/",
   "scripts": {
     "dev": "vite",
     "predeploy": "yarn build",
