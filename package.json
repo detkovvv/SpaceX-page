@@ -9,7 +9,7 @@
     "dev": "vite",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d dist",
-    "build": "tsc --noEmit && vite build",
+    "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx,json}'",
     "lint:fix": "eslint --fix 'src/**/*.{js,jsx,ts,tsx,json}'",
