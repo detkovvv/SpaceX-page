@@ -17,13 +17,6 @@
     text-align: left;
 }
 
-body {
-    min-height: 100vh;
-    background-image: url('./assets/images/background.png');
-    background-position: center;
-    background-size: cover;
-}
-
 /* Reset and base styles  */
 * {
     padding: 0;

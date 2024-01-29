@@ -11,6 +11,10 @@ import { type Data } from '../utils/types';
 export const App: FC = () => {
     const data: Data = mockData;
 
+    const backgroundImage = {
+        backgroundImage: `url(${data.backgroundImage})`,
+    };
+
     return (
         <ErrorBoundary
             FallbackComponent={FallbackComponent}
@@ -18,7 +22,7 @@ export const App: FC = () => {
                 location.reload();
             }}
         >
-            <div className={style.app}>
+            <div className={style.app} style={backgroundImage}>
                 <Navbar logo={data.logo} menu={data.menu} />
                 <Main benefits={data.benefits} header={data.header} />
             </div>

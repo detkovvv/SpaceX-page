@@ -1,5 +1,4 @@
 import { type Data } from './types';
-import backgroundImage from '../assets/images/background.png';
 
 export const mockData: Data = {
     menu: [
@@ -11,7 +10,7 @@ export const mockData: Data = {
         { id: crypto.randomUUID(), name: 'Контакты' },
     ],
     logo: 'src/assets/icons/logo.png',
-    backgroundImage,
+    backgroundImage: 'src/assets/images/background.png',
     header: {
         mainTitle: 'путешествие',
         title: 'на красную планету',
