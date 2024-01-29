@@ -1,12 +1,16 @@
-import React from 'react';
+import { type FC } from 'react';
 import { ErrorBoundary } from 'react-error-boundary';
 
 import style from './App.module.css';
 import { FallbackComponent } from '../components/FallbackComponent/FallbackComponent';
 import { Main } from '../components/Main/Main';
 import { Navbar } from '../components/Navbar/Navbar';
+import { mockData } from '../utils/mockData';
+import { type Data } from '../utils/types';
 
-export const App = () => {
+export const App: FC = () => {
+    const data: Data = mockData;
+
     return (
         <ErrorBoundary
             FallbackComponent={FallbackComponent}
@@ -15,8 +19,8 @@ export const App = () => {
             }}
         >
             <div className={style.app}>
-                <Navbar />
-                <Main />
+                <Navbar logo={data.logo} menu={data.menu} />
+                <Main benefits={data.benefits} header={data.header} />
             </div>
         </ErrorBoundary>
     );

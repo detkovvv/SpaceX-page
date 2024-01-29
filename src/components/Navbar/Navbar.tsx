@@ -4,13 +4,18 @@ import style from './Navbar.module.css';
 import { Logo } from '../Logo/Logo';
 import { Menu } from '../Menu/Menu';
 
-export const Navbar: FC = () => {
+type NavbarProps = {
+    logo: string;
+    menu: { id: string; name: string }[];
+};
+
+export const Navbar: FC<NavbarProps> = ({ logo, menu }) => {
     return (
         <div>
             <nav className={style.navbar}>
                 <div className={style.navbar_row}>
-                    <Logo />
-                    <Menu />
+                    <Logo logo={logo} />
+                    <Menu menu={menu} />
                 </div>
             </nav>
         </div>

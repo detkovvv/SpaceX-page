@@ -2,9 +2,13 @@ import { type FC } from 'react';
 
 import style from './Logo.module.css';
 import angle from '../../assets/icons/angle.png';
-import logo from '../../assets/icons/logo.png';
 
-export const Logo: FC = () => {
+type LogoProps = {
+    logo: string;
+};
+
+export const Logo: FC<LogoProps> = ({ logo }) => {
+    console.log(logo);
     return (
         <a className={style.logo} href='#'>
             <img alt='logo' src={logo} />
