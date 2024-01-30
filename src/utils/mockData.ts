@@ -9,8 +9,8 @@ export const mockData: Data = {
         { id: crypto.randomUUID(), name: 'О компании' },
         { id: crypto.randomUUID(), name: 'Контакты' },
     ],
-    logo: 'src/assets/icons/logo.png',
-    backgroundImage: 'src/assets/images/background.png',
+    logo: './assets/icons/logo.png',
+    backgroundImage: './assets/images/background.png',
     header: {
         mainTitle: 'путешествие',
         title: 'на красную планету',
