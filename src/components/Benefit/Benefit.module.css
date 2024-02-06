@@ -1,0 +1,86 @@
+.item {
+    padding: 30px 35px;
+}
+
+.item:nth-child(1) {
+    background: linear-gradient(to bottom right, transparent, rgba(255, 255, 255, 0.031));
+}
+
+.item:nth-child(2) {
+    background: linear-gradient(to bottom left, rgba(255, 255, 255, 0.031), transparent);
+}
+
+.item:nth-child(3) {
+    background: linear-gradient(to top right, rgba(255, 255, 255, 0.031), transparent);
+}
+
+.item:nth-child(4) {
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.031), transparent);
+}
+
+.item:nth-child(1):hover {
+    background: linear-gradient(to bottom right, transparent, rgba(255, 255, 255, 0.061));
+    border: 1px solid;
+    border-image: linear-gradient(
+            to bottom right,
+            transparent,
+            transparent,
+            transparent,
+            #4c5255 80%
+        )
+        1;
+}
+
+.item:nth-child(2):hover {
+    background: linear-gradient(to bottom left, rgba(255, 255, 255, 0.061), transparent);
+    border: 1px solid;
+    border-image: linear-gradient(to top right, transparent, transparent, transparent, #4c5255 80%)
+        1;
+}
+
+.item:nth-child(3):hover {
+    background: linear-gradient(to top right, rgba(255, 255, 255, 0.061), transparent);
+    border: 1px solid;
+    border-image: linear-gradient(
+            to bottom left,
+            transparent,
+            transparent,
+            transparent,
+            #4c5255 80%
+        )
+        1;
+}
+
+.item:nth-child(4):hover {
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.061), transparent);
+    border: 1px solid;
+    border-image: linear-gradient(to top left, transparent, transparent, transparent, #4c5255 80%) 1;
+}
+
+@media screen and (max-width: 520px) {
+    .item {
+        background: linear-gradient(to top, transparent, rgba(255, 255, 255, 0.061));
+    }
+
+    .item:hover {
+        background: linear-gradient(to top, transparent, rgba(255, 255, 255, 0.111));
+        border: 1px solid;
+        border-image: linear-gradient(to top, transparent, transparent, transparent, #64241a 80%) 1;
+    }
+}
+
+.item:hover {
+    cursor: pointer;
+}
+
+.item_text {
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.item_number {
+    font-size: 46px;
+    font-weight: bold;
+    text-align: center;
+}
