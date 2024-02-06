@@ -59,13 +59,13 @@
 
 @media screen and (max-width: 520px) {
     .item {
-        background: linear-gradient(to top, transparent, rgba(255, 255, 255, 0.061));
+        background: linear-gradient(to top, transparent, rgba(255, 255, 255, 0.061))!important;
     }
 
     .item:hover {
-        background: linear-gradient(to top, transparent, rgba(255, 255, 255, 0.111));
-        border: 1px solid;
-        border-image: linear-gradient(to top, transparent, transparent, transparent, #64241a 80%) 1;
+        background: linear-gradient(to top, transparent, rgba(255, 255, 255, 0.111))!important;
+        border: 1px solid !important;
+        border-image: linear-gradient(to top, transparent, transparent, transparent, #64241a 80%) 1 !important;
     }
 }
 
